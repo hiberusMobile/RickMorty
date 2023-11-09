@@ -7,11 +7,11 @@
 */
 
 // MARK: - ContentView
-"contentView.episodesTab" = "Episodios";
-"contentView.charactersTab" = "Personajes";
+"contentView.episodesTab" = "Episodes";
+"contentView.charactersTab" = "Characters";
 
 // MARK: - EpisodesList
-"episodesList.title" = "Episodios";
+"episodesList.title" = "Episodes";
 
 // MARK: - CharactersList
-"charactersList.title" = "Personajes";
+"charactersList.title" = "Characters";
