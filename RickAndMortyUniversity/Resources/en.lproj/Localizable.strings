@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  RickAndMortyUniversity
+
+  Created by Javier Torné Hernández on 8/11/23.
+  
+*/
+
+// MARK: - ContentView
+"contentView.episodesTab" = "Episodios";
+"contentView.charactersTab" = "Personajes";
+
+// MARK: - EpisodesList
+"episodesList.title" = "Episodios";
+
+// MARK: - CharactersList
+"charactersList.title" = "Personajes";
