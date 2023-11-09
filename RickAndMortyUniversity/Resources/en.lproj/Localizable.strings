@@ -10,6 +10,13 @@
 "contentView.episodesTab" = "Episodes";
 "contentView.charactersTab" = "Characters";
 
+// MARK: - Onboarding
+"onboarding.skip" = "Skip";
+"onboarding.episodes.title" = "Episodes";
+"onboarding.episodes.description" = "Episodes feature";
+"onboarding.characters.title" = "Characters";
+"onboarding.characters.description" = "Characters feature";
+
 // MARK: - EpisodesList
 "episodesList.title" = "Episodes";
 

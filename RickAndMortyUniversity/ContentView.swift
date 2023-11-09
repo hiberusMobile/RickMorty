@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var coordinator: Coordinator
+    @State private var showOnboarding = true
     
     var body: some View {
         TabView {
@@ -21,6 +22,9 @@ struct ContentView: View {
                 .tabItem {
                     Label("contentView.charactersTab", systemImage: "person.2.fill")
                 }
+        }
+        .fullScreenCover(isPresented: $showOnboarding) {
+            OnboardingTabView()
         }
     }
 }

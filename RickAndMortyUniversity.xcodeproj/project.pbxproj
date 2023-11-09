@@ -42,6 +42,8 @@
 		779FD3432AFD2129003441B9 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 779FD3412AFD2129003441B9 /* Main.xcdatamodeld */; };
 		779FD3452AFD2248003441B9 /* CoreDataPersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779FD3442AFD2248003441B9 /* CoreDataPersistenceController.swift */; };
 		779FD3472AFD2358003441B9 /* CoreDataEpisodesLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779FD3462AFD2358003441B9 /* CoreDataEpisodesLocalService.swift */; };
+		779FD34A2AFD2E04003441B9 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779FD3492AFD2E04003441B9 /* OnboardingView.swift */; };
+		779FD34C2AFD307E003441B9 /* OnboardingTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779FD34B2AFD307E003441B9 /* OnboardingTabView.swift */; };
 		77F13C3F2AFA8C9400D54F3D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F13C3E2AFA8C9400D54F3D /* ContentView.swift */; };
 		77F13C422AFA91DB00D54F3D /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F13C412AFA91DB00D54F3D /* NetworkClient.swift */; };
 		77F13C442AFA940D00D54F3D /* URLSessionNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F13C432AFA940D00D54F3D /* URLSessionNetworkClient.swift */; };
@@ -88,6 +90,8 @@
 		779FD3422AFD2129003441B9 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		779FD3442AFD2248003441B9 /* CoreDataPersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPersistenceController.swift; sourceTree = "<group>"; };
 		779FD3462AFD2358003441B9 /* CoreDataEpisodesLocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataEpisodesLocalService.swift; sourceTree = "<group>"; };
+		779FD3492AFD2E04003441B9 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		779FD34B2AFD307E003441B9 /* OnboardingTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTabView.swift; sourceTree = "<group>"; };
 		77F13C3E2AFA8C9400D54F3D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		77F13C412AFA91DB00D54F3D /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		77F13C432AFA940D00D54F3D /* URLSessionNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkClient.swift; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 		7734B41E2AF937CC00A392AB /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				779FD3482AFD2DE4003441B9 /* Onboarding */,
 				7734B41F2AF937EB00A392AB /* Characters */,
 				7734B4282AF9426300A392AB /* Episodes */,
 			);
@@ -311,6 +316,15 @@
 			path = UseCases;
 			sourceTree = "<group>";
 		};
+		779FD3482AFD2DE4003441B9 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				779FD34B2AFD307E003441B9 /* OnboardingTabView.swift */,
+				779FD3492AFD2E04003441B9 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		77F13C402AFA91C600D54F3D /* NetworkClient */ = {
 			isa = PBXGroup;
 			children = (
@@ -442,6 +456,7 @@
 				7734B4412AF9523700A392AB /* MockCharactersRemoteService.swift in Sources */,
 				7734B41B2AF9377600A392AB /* Character.swift in Sources */,
 				7734B42D2AF9429100A392AB /* EpisodesViewModel.swift in Sources */,
+				779FD34A2AFD2E04003441B9 /* OnboardingView.swift in Sources */,
 				7735EA1B2AFBDCD50086B7F0 /* GetCharactersUseCase.swift in Sources */,
 				7734B40E2AF92C4C00A392AB /* CharactersView.swift in Sources */,
 				779FD3472AFD2358003441B9 /* CoreDataEpisodesLocalService.swift in Sources */,
@@ -462,6 +477,7 @@
 				7734B43B2AF94C6C00A392AB /* CharactersRemoteService.swift in Sources */,
 				77F13C442AFA940D00D54F3D /* URLSessionNetworkClient.swift in Sources */,
 				7734B4362AF943BD00A392AB /* EpisodeDetailView.swift in Sources */,
+				779FD34C2AFD307E003441B9 /* OnboardingTabView.swift in Sources */,
 				779FD3452AFD2248003441B9 /* CoreDataPersistenceController.swift in Sources */,
 				7735EA2B2AFC03400086B7F0 /* RemoteImage.swift in Sources */,
 				7734B4482AF95A7500A392AB /* LiveEpisodesRemoteService.swift in Sources */,

@@ -10,6 +10,13 @@
 "contentView.episodesTab" = "Episodios";
 "contentView.charactersTab" = "Personajes";
 
+// MARK: - Onboarding
+"onboarding.skip" = "Saltar";
+"onboarding.episodes.title" = "Episodios";
+"onboarding.episodes.description" = "Funcionalidad de episodios";
+"onboarding.characters.title" = "Personajes";
+"onboarding.characters.description" = "Funcionalidad de personajes";
+
 // MARK: - EpisodesList
 "episodesList.title" = "Episodios";
 
