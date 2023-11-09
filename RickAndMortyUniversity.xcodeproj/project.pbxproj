@@ -39,6 +39,9 @@
 		7735EA322AFC0D580086B7F0 /* monkey.json in Resources */ = {isa = PBXBuildFile; fileRef = 7735EA312AFC0D580086B7F0 /* monkey.json */; };
 		7735EA352AFC0E2B0086B7F0 /* glasses.json in Resources */ = {isa = PBXBuildFile; fileRef = 7735EA342AFC0E2B0086B7F0 /* glasses.json */; };
 		775D349F2AFBD67E00D18D56 /* CharactersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775D349E2AFBD67E00D18D56 /* CharactersRepository.swift */; };
+		779FD3432AFD2129003441B9 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 779FD3412AFD2129003441B9 /* Main.xcdatamodeld */; };
+		779FD3452AFD2248003441B9 /* CoreDataPersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779FD3442AFD2248003441B9 /* CoreDataPersistenceController.swift */; };
+		779FD3472AFD2358003441B9 /* CoreDataEpisodesLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779FD3462AFD2358003441B9 /* CoreDataEpisodesLocalService.swift */; };
 		77F13C3F2AFA8C9400D54F3D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F13C3E2AFA8C9400D54F3D /* ContentView.swift */; };
 		77F13C422AFA91DB00D54F3D /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F13C412AFA91DB00D54F3D /* NetworkClient.swift */; };
 		77F13C442AFA940D00D54F3D /* URLSessionNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F13C432AFA940D00D54F3D /* URLSessionNetworkClient.swift */; };
@@ -82,6 +85,9 @@
 		7735EA312AFC0D580086B7F0 /* monkey.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = monkey.json; sourceTree = "<group>"; };
 		7735EA342AFC0E2B0086B7F0 /* glasses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = glasses.json; sourceTree = "<group>"; };
 		775D349E2AFBD67E00D18D56 /* CharactersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersRepository.swift; sourceTree = "<group>"; };
+		779FD3422AFD2129003441B9 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		779FD3442AFD2248003441B9 /* CoreDataPersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPersistenceController.swift; sourceTree = "<group>"; };
+		779FD3462AFD2358003441B9 /* CoreDataEpisodesLocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataEpisodesLocalService.swift; sourceTree = "<group>"; };
 		77F13C3E2AFA8C9400D54F3D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		77F13C412AFA91DB00D54F3D /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		77F13C432AFA940D00D54F3D /* URLSessionNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkClient.swift; sourceTree = "<group>"; };
@@ -234,6 +240,8 @@
 		7734B4422AF955FA00A392AB /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				779FD3412AFD2129003441B9 /* Main.xcdatamodeld */,
+				779FD3442AFD2248003441B9 /* CoreDataPersistenceController.swift */,
 				7734B4432AF9561100A392AB /* Characters */,
 				7734B4442AF95A5000A392AB /* Episodes */,
 			);
@@ -329,6 +337,7 @@
 				77F13C492AFAA69300D54F3D /* EpisodesLocalService.swift */,
 				77F13C4B2AFAA74100D54F3D /* UserDefaultsEpisodesLocalService.swift */,
 				77F13C502AFABDF300D54F3D /* MockEpisodesLocalService.swift */,
+				779FD3462AFD2358003441B9 /* CoreDataEpisodesLocalService.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -435,10 +444,12 @@
 				7734B42D2AF9429100A392AB /* EpisodesViewModel.swift in Sources */,
 				7735EA1B2AFBDCD50086B7F0 /* GetCharactersUseCase.swift in Sources */,
 				7734B40E2AF92C4C00A392AB /* CharactersView.swift in Sources */,
+				779FD3472AFD2358003441B9 /* CoreDataEpisodesLocalService.swift in Sources */,
 				77F13C512AFABDF300D54F3D /* MockEpisodesLocalService.swift in Sources */,
 				7734B4312AF942CE00A392AB /* Episode.swift in Sources */,
 				7734B4382AF9448D00A392AB /* APIResponse.swift in Sources */,
 				7734B42B2AF9428600A392AB /* EpisodesView.swift in Sources */,
+				779FD3432AFD2129003441B9 /* Main.xcdatamodeld in Sources */,
 				7734B4252AF93AB000A392AB /* CharacterDetailView.swift in Sources */,
 				7734B40C2AF92C4C00A392AB /* RickAndMortyUniversityApp.swift in Sources */,
 				77F13C4A2AFAA69300D54F3D /* EpisodesLocalService.swift in Sources */,
@@ -451,6 +462,7 @@
 				7734B43B2AF94C6C00A392AB /* CharactersRemoteService.swift in Sources */,
 				77F13C442AFA940D00D54F3D /* URLSessionNetworkClient.swift in Sources */,
 				7734B4362AF943BD00A392AB /* EpisodeDetailView.swift in Sources */,
+				779FD3452AFD2248003441B9 /* CoreDataPersistenceController.swift in Sources */,
 				7735EA2B2AFC03400086B7F0 /* RemoteImage.swift in Sources */,
 				7734B4482AF95A7500A392AB /* LiveEpisodesRemoteService.swift in Sources */,
 				7734B42F2AF9429D00A392AB /* EpisodeRowView.swift in Sources */,
@@ -703,6 +715,19 @@
 			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		779FD3412AFD2129003441B9 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				779FD3422AFD2129003441B9 /* Main.xcdatamodel */,
+			);
+			currentVersion = 779FD3422AFD2129003441B9 /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7734B4002AF92C4C00A392AB /* Project object */;
 }

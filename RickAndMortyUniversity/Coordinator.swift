@@ -21,7 +21,8 @@ class Coordinator: ObservableObject {
         charactersRepository = CharactersRepository(remoteService: charactersRemoteService)
         
         let episodesRemoteService: EpisodesRemoteService = mock ? MockEpisodesRemoteService() : LiveEpisodesRemoteService(networkClient: networkClient)
-        let episodesLocalService: EpisodesLocalService = mock ? MockEpisodesLocalService() : UserDefaultsEpisodesLocalService()
+        let persistenceController = CoreDataPersistenceController()
+        let episodesLocalService: EpisodesLocalService = mock ? MockEpisodesLocalService() : CoreDataEpisodesLocalService(container: persistenceController.container)
         
         episodesRepository = EpisodesRepository(
             remoteService: episodesRemoteService,
